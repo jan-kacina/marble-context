@@ -1,0 +1,39 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "streams": "ts-node ./app/stream-tester/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.170",
+    "@types/node": "^15.0.1",
+    "@types/serialport": "^8.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.22.1",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "@marblejs/core": "^3.5.0",
+    "@marblejs/messaging": "^3.5.0",
+    "@marblejs/middleware-body": "^3.5.0",
+    "@marblejs/middleware-io": "^3.5.0",
+    "@marblejs/middleware-logger": "^3.5.0",
+    "@marblejs/websockets": "^3.5.0",
+    "fp-ts": "^2.10.5",
+    "guid-typescript": "^1.0.9",
+    "io-ts": "^2.2.16",
+    "lodash": "^4.17.21",
+    "rxjs": "^6.5.3",
+    "ts-node": "^10.0.0"
+  }
+}

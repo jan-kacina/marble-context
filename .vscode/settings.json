@@ -1,0 +1,10 @@
+{
+  "keyboard.dispatch": "keyCode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.associations": {
+    "*.json": "jsonc"
+  }
+}

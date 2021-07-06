@@ -1,0 +1,1 @@
+{"version":3,"file":"ws.server.js","sourceRoot":"","sources":["../../ws-api/ws.server.ts"],"names":[],"mappings":";;;AACA,qDAA4D;AAE5D,+CAAwC;AAExC,MAAM,QAAQ,GAAG,kCAAqB,CAAC;IACrC,OAAO,EAAE;QACP,IAAI,EAAE,IAAI;QACV,IAAI,EAAE,WAAW;KAClB;IACD,QAAQ,EAAR,sBAAQ;IACR,YAAY,EAAE;IACZ,wEAAwE;KACzE;CACF,CAAC,CAAA;AAEO,4BAAQ"}
