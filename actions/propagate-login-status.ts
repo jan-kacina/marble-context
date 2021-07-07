@@ -1,20 +1,19 @@
 import { createContextToken, createReader, useContext } from '@marblejs/core'
 import { WebSocketServerToken } from '../ws-api/tokens'
 import { loginStatus$ } from '../streams/login-status'
+import { appContextProvider } from '..'
 
 class PropagateLoginStatus {
   // eslint-disable-next-line class-methods-use-this
   run() {
     loginStatus$.subscribe((state) => {
       console.log(`Emission begin: ${state}`)
-      createReader(
-        (ask) => useContext(WebSocketServerToken)(ask).clients.forEach(
-          (client) => {
-            console.log(`Context begin: ${client.protocol}`)
-            client.send({ type: 'login-state', payload: state })
-            console.log(`Context begin: ${client.protocol}`)
-          },
-        ),
+      useContext(WebSocketServerToken)(appContextProvider).clients.forEach(
+        (client) => {
+          console.log(`Context begin: ${client.protocol}`)
+          client.send(`${state}`)
+          console.log(`Context end: ${client.protocol}`)
+        },
       )
       console.log(`Emission end: ${state}`)
     })
